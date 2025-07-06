@@ -86,10 +86,20 @@ a, p, h1, ul
     border: none;
     background: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: stretch;
     gap: 15px;
     flex-direction: column;
     padding: 0;
+}
+
+#about
+{
+    flex: 0 0 auto;
+}
+
+#etc
+{
+    flex: 1 1 0%;
 }
 
 @media (min-width: 900px)
