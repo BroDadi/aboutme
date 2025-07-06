@@ -1,0 +1,131 @@
+body
+{
+    font-family: "comic sans ms";
+    background: linear-gradient(45deg, #000080, #008000);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    overflow: scroll;
+    padding: 10px;
+}
+
+div
+{
+    text-align: center;
+    background: linear-gradient(45deg,
+    rgba(255,255,255,0.4) 0%,
+    rgba(255,255,255,0.4) 15%,
+    rgba(255,255,255,0.5) 20%,
+    rgba(255,255,255,0.5) 45%,
+    rgba(255,255,255,0.4) 50%,
+    rgba(255,255,255,0.4) 75%,
+    rgba(255,255,255,0.5) 80%,
+    rgba(255,255,255,0.5) 100%);
+    width: auto;
+    border: solid 2px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    padding: 0px 15px;
+}
+
+#page {
+    border: none;
+    background: none;
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: scroll;
+}
+
+ul
+{
+    text-align: left;
+}
+
+a, p, h1, ul
+{
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 2px rgba(0, 0, 0, 1);
+}
+
+#links
+{
+    border: none;
+    background: none;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+
+#links > a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
+#socials img
+{
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.group
+{
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-direction: column;
+    padding: 0;
+}
+
+@media (min-width: 900px)
+{
+    .group {flex-direction: row;}
+    #page {margin-top: 0;}
+}
+
+#daycount, #bi
+{
+    display: inline;
+}
+
+#bi
+{
+    background: linear-gradient(135deg, #ff0080 0%, #ff0080 35%, #8000ff 45%, #8000ff 55%, #0000ff 65%, #0000ff 100%);
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+}
+
+@keyframes birthdayyy
+{
+    0% {color: #ff0000};
+    15% {color: #ff8000};
+    30% {color: #ffff00};
+    40% {color: #00ff00};
+    55% {color: #00ffff};
+    70% {color: #0000ff};
+    85% {color: #8000ff};
+    100% {color: #ff0000};
+}
+
+.bdaytoday
+{
+    animation: birthdayyy 10s infinite;
+    font-size: 24px;
+    font-weight: bold;
+}
